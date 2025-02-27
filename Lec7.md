@@ -5,6 +5,7 @@ local     72.00 KiB
 students  72.00 KiB
 test> use g13
 switched to db g13
+
 g13> db.students.insertMany([
 ...   { name: "Alice", age: 22, city: "New York" },
 ...   { name: "Bob", age: 25, city: "Los Angeles" },
@@ -19,6 +20,7 @@ g13> db.students.insertMany([
     '2': ObjectId('67c06c004a2d47a05ccb3a8f')
   }
 }
+
 g13> db.students.updateOne(
 ...   { name: "Alice" },  // Filter
 ...   { $set: { age: 23 } } // Update operation
@@ -31,6 +33,7 @@ g13> db.students.updateOne(
   modifiedCount: 1,
   upsertedCount: 0
 }
+
 g13> db.students.updateMany(
 ...   {},  // Empty filter updates all documents
 ...   { $inc: { age: 1 } } // Increment age by 1
@@ -43,6 +46,7 @@ g13> db.students.updateMany(
   modifiedCount: 3,
   upsertedCount: 0
 }
+
 g13> db.students.replaceOne(
 ...   { name: "Bob" }, // Filter
 ...   { name: "Robert", age: 28, city: "San Francisco" } // New document (entire replacement)
@@ -55,6 +59,7 @@ g13> db.students.replaceOne(
   modifiedCount: 1,
   upsertedCount: 0
 }
+
 g13> db.students.find().pretty()
 ... 
 [
@@ -77,9 +82,11 @@ g13> db.students.find().pretty()
     city: 'Chicago'
   }
 ]
+
 g13> db.students.deleteOne({ name: "Charlie" })
 ... 
 { acknowledged: true, deletedCount: 1 }
+
 g13> db.students.find().pretty()
 [
   {
