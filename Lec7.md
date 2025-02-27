@@ -3,6 +3,7 @@ admin     40.00 KiB
 config    72.00 KiB
 local     72.00 KiB
 students  72.00 KiB
+
 test> use g13
 switched to db g13
 
