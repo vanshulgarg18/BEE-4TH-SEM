@@ -1,30 +1,3 @@
-#sem4repo
-# lec-6
-
-Microsoft Windows [Version 10.0.26100.3194]
-(c) Microsoft Corporation. All rights reserved.
-
-C:\Users\prabh>mongosh
-Current Mongosh Log ID: 67b72f785bf866f49d79a1b5
-Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.6
-Using MongoDB:          8.0.4
-Using Mongosh:          2.3.6
-
-For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
-
-
-
-
-To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
-You can opt-out by running the disableTelemetry() command.
-
-
-
-
-------
-   The server generated these startup warnings when booting
-   2025-02-15T10:02:14.254+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
-------
 
 test> show db
 
